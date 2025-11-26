@@ -1,23 +1,27 @@
-<!DOCTYPE html> 
-<html lang="th"> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>เว็บแรกของฉัน</title> 
-    <link rel="stylesheet" href="styles.css" /> 
-  </head> 
-  <body> 
-    <div class="container"> 
-      <h1>สวัสดี! ยินดีต้อนรับ</h1> 
-      <p>นี่คือหน้าเว็บแรกของฉันที่สร้างขึ้นด้วย HTML5 & CSS</p> 
- 
-      <img 
-        src="https://cdn-icons-png.flaticon.com/256/11180/11180563.png" 
-        alt="profile" 
-/> 
-<button id="btn">คลิกฉัน!</button> 
-<div id="message">ยินดีต้อนรับสู่โลกของ Web Development</div> 
-</div> 
-<script src="script.js"></script> 
-</body> 
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เว็บแรกของฉัน</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>สวัสดี! ยินดีต้อนรับ</h1>
+      <p>นี่คือหน้าเว็บแรกของฉันที่สร้างขึ้นด้วย HTML5 & CSS</p>
+      <img
+        src="https://cdn-icons-png.flaticon.com/256/11180/11180563.png"
+        alt="profile"
+      />
+      <button id="btn">คลิกฉัน!</button>
+      <div id="message">ยินดีต้อนรับสู่โลกของ Web Development</div>
+    </div>
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        const msg = document.getElementById("message");
+        msg.style.display = msg.style.display === "none" ? "block" : "none";
+      });
+    </script>
+  </body>
 </html>
